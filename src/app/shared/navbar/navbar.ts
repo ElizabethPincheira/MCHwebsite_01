@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WhatsappService } from '../../core/service/whatsapp.service';
 
 @Component({
   selector: 'app-navbar',
@@ -14,5 +15,16 @@ export class Navbar {
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
+
+  constructor(
+      private whatsappService: WhatsappService
+    ) {}
+  
+    orderNow() {
+  
+      this.whatsappService.send(
+        'Hola, quiero realizar un pedido de Mote con Huesillos.'
+      );
+    }
 
 }
