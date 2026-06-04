@@ -1,0 +1,79 @@
+
+<section
+id="productos"
+class="
+bg-white
+py-24">
+
+    <div
+    class="
+    max-w-7xl
+    mx-auto
+    px-6">
+
+        <!-- HEADER -->
+
+        <div class="text-center mb-20">
+
+            <h2
+            class="
+            text-[#4A2C1D]
+            text-5xl
+            font-extrabold">
+
+                NUESTROS PRODUCTOS
+
+            </h2>
+
+            <div
+            class="
+            flex
+            justify-center
+            items-center
+            gap-4
+            mt-6">
+
+                <div class="w-20 h-[2px] bg-[#C96B3B]"></div>
+
+                <span
+                class="
+                text-[#C96B3B]
+                text-2xl">
+
+                    ❤
+
+                </span>
+
+                <div class="w-20 h-[2px] bg-[#C96B3B]"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GRID.  AQUI ESTAN LAS CARSD -->
+
+        <div
+        class="
+        grid
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-10">
+
+            @for(product of products; track product.id){
+
+                <app-card
+                [product]="product">
+                </app-card>
+
+            }
+
+        </div> 
+        
+       
+
+        
+
+    </div>
+
+</section>

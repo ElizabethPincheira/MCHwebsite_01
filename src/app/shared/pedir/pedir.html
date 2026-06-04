@@ -1,0 +1,130 @@
+<section
+id="como-pedir"
+class="bg-[#F7EEE4] py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Título -->
+
+        <div class="text-center mb-20">
+
+            <h2
+            class="
+            text-[#4A2C1D]
+            text-5xl
+            font-extrabold">
+
+                ¿CÓMO PEDIR?
+
+            </h2>
+
+            <div
+            class="
+            flex
+            justify-center
+            items-center
+            gap-4
+            mt-5">
+
+                <div class="w-20 h-[2px] bg-[#C96B3B]"></div>
+
+                <span class="text-[#C96B3B] text-xl">
+                    ❤
+                </span>
+
+                <div class="w-20 h-[2px] bg-[#C96B3B]"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Pasos -->
+
+        <div
+        class="
+        grid
+        md:grid-cols-2
+        lg:grid-cols-4
+        gap-12
+        relative">
+
+            @for(step of steps; track step.number){
+
+                <div
+                class="
+                text-center
+                relative">
+
+                    <!-- Número -->
+
+                    <div
+                    class="
+                    absolute
+                    left-1/2
+                    -translate-x-1/2
+                    -top-4
+                    w-10
+                    h-10
+                    rounded-full
+                    bg-[#E28A3B]
+                    text-white
+                    font-bold
+                    flex
+                    items-center
+                    justify-center">
+
+                        {{step.number}}
+
+                    </div>
+
+                    <!-- Icono -->
+
+                    <div
+                    class="
+                    w-28
+                    h-28
+                    mx-auto
+                    rounded-full
+                    bg-white
+                    shadow-md
+                    flex
+                    items-center
+                    justify-center
+                    text-5xl">
+
+                        {{step.icon}}
+
+                    </div>
+
+                    <!-- Texto -->
+
+                    <h3
+                    class="
+                    mt-8
+                    text-[#4A2C1D]
+                    font-bold
+                    text-lg">
+
+                        {{step.title}}
+
+                    </h3>
+
+                    <p
+                    class="
+                    mt-4
+                    text-[#6D5A4F]
+                    leading-7">
+
+                        {{step.description}}
+
+                    </p>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
