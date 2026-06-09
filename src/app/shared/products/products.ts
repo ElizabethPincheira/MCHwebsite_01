@@ -36,6 +36,7 @@ price:'6.500',
 image:'assets/mote-pack.png'
 }
 */
+
 ];
 
 }
