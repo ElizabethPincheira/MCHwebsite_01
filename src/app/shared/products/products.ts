@@ -27,6 +27,7 @@ price:'3.500',
 image:'assets/mote-litro.png'
 },
 
+/*
 {
 id:3,
 name:'Pack Familiar',
@@ -34,7 +35,7 @@ description:'Ideal para familia, reuniones y compartir.',
 price:'6.500',
 image:'assets/mote-pack.png'
 }
-
+*/
 ];
 
 }
