@@ -6,12 +6,16 @@ import { Nosotros } from './shared/nosotros/nosotros';
 import { Footer } from './shared/footer/footer';
 import { Contacto } from './shared/contacto/contacto';
 import { Hero } from './shared/hero/hero';
+import { Entregas } from './shared/entregas/entregas';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Products, Pedir, Nosotros, Contacto, Footer, Hero],
+  imports: [Navbar, Products, Pedir, Nosotros, Contacto, Footer, Hero, Entregas],
   templateUrl: './pages/home/home.html',
 })
-export class App {}
+export class App {
+
+  showComingSoon = true;
+}
