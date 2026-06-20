@@ -17,5 +17,4 @@ import { Entregas } from '../../shared/entregas/entregas';
 export class Home {
 
     showComingSoon = true;
-
 }
